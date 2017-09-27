@@ -46,9 +46,25 @@ body {
 }
 
 /* My styles */
+@font-face {
+    font-family: IndieFlowerLight;
+    src: url(../fonts/Kalam-Light.ttf);
+}
+@font-face {
+    font-family: IndieFlowerRegular;
+    src: url(../fonts/Kalam-Regular.ttf);
+}
+@font-face {
+    font-family: IndieFlowerBold;
+    src: url(../fonts/Kalam-Bold.ttf);
+}
+
 /* 4 all */
 *:focus{
     outline: 0;
+}
+body{
+    font-family: IndieFlowerRegular;
 }
 input {
     width: 100%;
