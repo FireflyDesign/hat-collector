@@ -83,12 +83,12 @@ input {
     right: 0;
     height: 60px;
     width: 100%;
-    background: #61276d;
+    background: #51426d;
     z-index: 9;
 }
 .bar .logo{
-    padding: 58px 15px 15px 55px;
-    background: #61276d;
+    padding: 58px 15px 15px 52px;
+    background: #51426d;
     position: absolute;
     top: 0;
     left: 0;
@@ -96,16 +96,17 @@ input {
     height: 140px;
     width: 140px;
     margin: -50px 0px 0px -45px;
-    border: 2px solid #a971bb;
+    border: 2px solid #c6a7d0;
 }
 .bar .logo img{
-    max-width: 55px;
+    max-width: 58px;
 }
 .bar button.new{
     float: right;
     font-size: 28px;
     padding: 16px;
     border: 0;
+    background: #92fd92;
 }
 
 
@@ -114,6 +115,8 @@ input {
 #search{
     font-size: 20px;
     margin-top: 20px;
+    height:55px;
+    border-radius: 0;
 }
 
 
@@ -124,6 +127,17 @@ input {
 #results .list-group-item{
     margin-bottom: 5px;
     border: 1px solid #333;
+}
+#results .list-group-item h4{
+    font-weight: 600;
+    line-height: 45px;
+    margin: 0;
+}
+#results .list-group-item img{
+    max-width: 45px;
+}
+#results .list-group-item p{
+    display: none;
 }
 
 
