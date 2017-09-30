@@ -1,14 +1,13 @@
 var db = null;
 document.addEventListener('deviceready', function() {
     db = window.sqlitePlugin.openDatabase({name: 'demo.db', location: 'default'});
-    console_log(db);
 
     create_table(db, 'my_table', ['name', 'surname', 'desc']);
     jQuery('.insert').click(function(){
         insert(db, 'my_table', ['eR', 'Martin', 'Morda mordzie morduchna']);
     });
     jQuery('.check').click(function(){
-        get_info(db, 'my_table', 'name', 'eR');
+        jQuery('#console').append('<span>' + get_info(db, 'my_table', 'desc', 'name', 'eR') + '</span>');
     });
 
 });
@@ -53,13 +52,16 @@ function insert(db, tableName, value) {
         console_log('Populated database OK');
     });
 }
-function get_info(db, tableName, where, value) {
+function get_info(db, tableName, what, where, value) {
 
-    var query = 'SELECT * FROM ' + tableName + ' WHERE ' + where + ' LIKE "' + value + '"';
+    var query = 'SELECT ' + what + ' FROM ' + tableName + ' WHERE ' + where + ' = "' + value + '"';
+    var result = false;
 
     db.transaction(function(tx) {
-        tx.executeSql('SELECT count(*) AS mycount FROM ' + tableName, [], function(tx, rs) {
-            console_log('Record count: ' + rs.rows.item(0).mycount);
+        tx.executeSql(query, [], function(tx, rs) {
+            console_log('Record count: ' + rs.rows.item(0)[what]);
+            result = rs.rows.item(0)[what];
+            return result;
         }, function(tx, error) {
             console_log('SELECT error: ' + error.message);
         });

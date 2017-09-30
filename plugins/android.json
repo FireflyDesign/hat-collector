@@ -15,6 +15,9 @@
         },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.collector.hat"
+        },
+        "cordova-plugin-speechrecognition": {
+            "PACKAGE_NAME": "com.collector.hat"
         }
     },
     "dependent_plugins": {}
