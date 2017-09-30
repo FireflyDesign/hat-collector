@@ -117,7 +117,7 @@
     <handled-path value="$PROJECT_DIR$/platforms/android/cordova/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="680" />
     <option name="width" value="680" />
     <option name="height" value="728" />
@@ -203,15 +203,15 @@
       <workItem from="1506534451778" duration="473000" />
       <workItem from="1506535082670" duration="19054000" />
       <workItem from="1506616567540" duration="5125000" />
-      <workItem from="1506772888255" duration="14522000" />
+      <workItem from="1506772888255" duration="14838000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39174000" />
+    <option name="totallyTimeSpent" value="39490000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="680" y="0" width="680" height="728" extended-state="0" />
+    <frame x="680" y="0" width="680" height="728" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1967742" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
