@@ -163,7 +163,16 @@ input {
 
 
 
-
+#console {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    max-width: 100%;
+    font-size: 15px;
+}
 
 
 

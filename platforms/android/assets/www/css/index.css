@@ -46,9 +46,25 @@ body {
 }
 
 /* My styles */
+@font-face {
+    font-family: IndieFlowerLight;
+    src: url(../fonts/Kalam-Light.ttf);
+}
+@font-face {
+    font-family: IndieFlowerRegular;
+    src: url(../fonts/Kalam-Regular.ttf);
+}
+@font-face {
+    font-family: IndieFlowerBold;
+    src: url(../fonts/Kalam-Bold.ttf);
+}
+
 /* 4 all */
 *:focus{
     outline: 0;
+}
+body{
+    font-family: IndieFlowerRegular;
 }
 input {
     width: 100%;
@@ -114,9 +130,9 @@ input {
 /* Search */
 #search{
     font-size: 20px;
-    margin-top: 20px;
-    height:55px;
-    border-radius: 0;
+    margin-top: 40px;
+    height: 45px;
+    border-radius: 70px;
 }
 
 
@@ -127,6 +143,7 @@ input {
 #results .list-group-item{
     margin-bottom: 5px;
     border: 1px solid #333;
+    border-radius: 15px;
 }
 #results .list-group-item h4{
     font-weight: 600;
@@ -146,7 +163,16 @@ input {
 
 
 
-
+#console {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    max-width: 100%;
+    font-size: 15px;
+}
 
 
 
