@@ -9,6 +9,15 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.collector.hat"
+        },
+        "cordova-plugin-sqlite-2": {
+            "PACKAGE_NAME": "com.collector.hat"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.collector.hat"
+        },
+        "cordova-plugin-speechrecognition": {
+            "PACKAGE_NAME": "com.collector.hat"
         }
     },
     "dependent_plugins": {}

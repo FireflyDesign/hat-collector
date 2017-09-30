@@ -38,19 +38,51 @@
         <title>Hat collector</title>
     </head>
     <body>
+        <div id="console">
+            <button class="insert">Insert</button>
+            <button class="check">Check</button>
+            <button class="listen">Listen</button>
+        </div>
+        <div class="bar">
+            <button class="fa fa-plus new"></button>
+            <figure class="logo">
+                <img class="img-responsive" src="img/logo.png">
+            </figure>
+        </div>
         <div class="content">
-            <div class="bar">
-                <button class="fa fa-check new"></button>
-            </div>
-            <h1>Hat collector</h1>
-
-            <div class="first-choice">
-                <div class="col-xs-6">
-                    <button>Czapki</button>
+            <div class="search-container">
+                <div class="row">
+                    <input id="search" name="search" placeholder="Szukaj...">
                 </div>
-                <div class="col-xs-6">
-                    <button>Czapki</button>
-                </div>
+                <ul id="results" class="list-group">
+                    <li class="list-group-item clearfix">
+                        <figure class="col-xs-3">
+                            <img class="img-responsive" src="img/example.jpg">
+                        </figure>
+                        <div class="col-xs-9">
+                            <h4>Elo czapa</h4>
+                            <p>Lorem ipsum dolor emit chuju muju dzikie węże</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item clearfix">
+                        <figure class="col-xs-3">
+                            <img class="img-responsive" src="img/example.jpg">
+                        </figure>
+                        <div class="col-xs-9">
+                            <h4>Elo czapa</h4>
+                            <p>Lorem ipsum dolor emit chuju muju dzikie węże</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item clearfix">
+                        <figure class="col-xs-3">
+                            <img class="img-responsive" src="img/example.jpg">
+                        </figure>
+                        <div class="col-xs-9">
+                            <h4>Elo czapa</h4>
+                            <p>Lorem ipsum dolor emit chuju muju dzikie węże</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
            <!--  <form>
                 <label for="name">
@@ -67,6 +99,7 @@
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/hat-collector.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
     </body>
 </html>
