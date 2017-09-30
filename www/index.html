@@ -44,7 +44,7 @@
             <button class="listen">Listen</button>
         </div>
         <div class="bar">
-            <button class="fa fa-plus new"></button>
+            <button class="fa fa-plus new-button new"></button>
             <figure class="logo">
                 <img class="img-responsive" src="img/logo.png">
             </figure>
@@ -88,10 +88,11 @@
                 <div class="bg"></div>
                 <form>
                     <label for="name">
-                        <input id="name" name="name" placeholder="Nazwa czapki">
+                        <input id="name" name="name" type="text" placeholder="Nazwa czapki">
                     </label>
                     <label for="photo">
-                        <input id="photo" name="photo" placeholder="Zdjecie">
+                        <figure></figure>
+                        <input id="photo" name="photo" type="hidden" placeholder="Zdjecie">
                     </label>
                     <label for="description">
                         <textarea id="description" name="description" placeholder="Opis czapki..."></textarea>
@@ -102,6 +103,7 @@
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/view-functions.js"></script>
         <script type="text/javascript" src="js/hat-collector.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
     </body>

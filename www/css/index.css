@@ -124,12 +124,18 @@ textarea {
 .bar .logo img{
     max-width: 58px;
 }
-.bar button.new{
+.bar button.new-button{
     float: right;
     font-size: 28px;
     padding: 16px;
     border: 0;
+    transition: 0.6s;
+}
+.bar button.new-button.new{
     background: #92fd92;
+}
+.bar button.new-button.close{
+    background: #f54747;
 }
 
 
@@ -191,11 +197,20 @@ textarea {
 
 #new-form {
     position: absolute;
-    top: 0;
+    top: 60px;
     right: 0;
-    width: 100%;
-    height: 100%;
+    width: 0;
+    height: 0;
     z-index: 99999;
+    transition: 0.6s;
+    opacity: 0;
+    visibility: hidden;
+}
+#new-form.opened {
+    height: calc(100% - 60px);
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
 }
 
 #new-form .bg {
@@ -214,13 +229,37 @@ textarea {
     right: 0;
     width: 100%;
     height: 100%;
-    padding: 100px 30px 50px;
+    padding: 70px 30px 30px;
+    opacity: 0;
+    transition: 0.3s;
+    transition-delay: 0.55s;
+}
+#new-form form.visible {
+    opacity: 1;
 }
 #new-form label {
     width: 100%;
     display: block;
 }
-
+label[for="photo"] figure{
+    width: 100%;
+    height: 150px;
+    background: #333333;
+    margin-bottom: 20px;
+    position: relative;
+}
+label[for="photo"] figure::after{
+    content: '\f03e';
+    display: block;
+    font-size: 40px;
+    color: #ffffff;
+    z-index: 9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: FontAwesome;
+}
 
 
 
