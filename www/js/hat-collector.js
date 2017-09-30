@@ -1,4 +1,4 @@
-var db = null;/*
+var db = null;
 document.addEventListener('deviceready', function () {
     db = window.sqlitePlugin.openDatabase({name: 'demo.db', location: 'default'});
 
@@ -10,16 +10,7 @@ document.addEventListener('deviceready', function () {
         jQuery('#console').append('<span>' + get_info(db, 'my_table', 'desc', 'name', 'eR') + '</span>');
     });
     jQuery('.listen').click(function () {
-        var options = {
-            language: 'pl-PL',
-            matches: 1,
-            prompt: 'Opisz czapkę'
-        };
-        window.plugins.speechRecognition.startListening(function (result) {
-            console_log(result);
-        }, function (error) {
-            console_log(error);
-        }, options);
+        start_talkwrite('#new-form form textarea', 'Opisz czapkę');
     });
 
     window.plugins.speechRecognition.requestPermission(function () {
@@ -28,8 +19,20 @@ document.addEventListener('deviceready', function () {
         console_log('Nie nadano');
     });
 
+
+
+
+
+
+    jQuery('button.new-button').click(function () {
+        if(jQuery(this).hasClass('new')){
+            open_new();
+        }else{
+            close_new();
+        }
+    });
+
 });
-*/
 
 
 
@@ -40,13 +43,19 @@ document.addEventListener('deviceready', function () {
 jQuery(document).ready(function () {
 
 
-
     jQuery('button.new-button').click(function () {
         if(jQuery(this).hasClass('new')){
             open_new();
         }else{
             close_new();
         }
+    });
+
+    jQuery('label[for="name"] .fa-microphone').click(function () {
+        start_talkwrite('#new-form input[name="name"]', 'Podaj nazwę czapki');
+    });
+    jQuery('label[for="description"] .fa-microphone').click(function () {
+        start_talkwrite('#new-form form textarea', 'Opisz czapkę');
     });
 
 });

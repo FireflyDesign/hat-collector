@@ -240,6 +240,7 @@ textarea {
 #new-form label {
     width: 100%;
     display: block;
+    position: relative;
 }
 label[for="photo"] figure{
     width: 100%;
@@ -260,7 +261,17 @@ label[for="photo"] figure::after{
     transform: translate(-50%, -50%);
     font-family: FontAwesome;
 }
-
+label .fa-microphone{
+    font-size: 20px;
+    padding: 5px 8px;
+    border-radius: 20px;
+    background: red;
+    border: 0;
+    color: #fff;
+    position: absolute;
+    right: 3px;
+    top: 8px;
+}
 
 
 

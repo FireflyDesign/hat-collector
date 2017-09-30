@@ -12,3 +12,18 @@ function close_new() {
     jQuery('#new-form').removeClass('opened');
     jQuery('#new-form form').removeClass('visible');
 }
+
+function start_talkwrite(container, title) {
+
+    var options = {
+        language: 'pl-PL',
+        matches: 1,
+        prompt: title
+    };
+
+    window.plugins.speechRecognition.startListening(function (result) {
+        jQuery(container).html(result);
+    }, function (error) {
+        console_log(error);
+    }, options);
+}
