@@ -1,6 +1,6 @@
 var db = null;
 document.addEventListener('deviceready', function () {
-    db = window.sqlitePlugin.openDatabase({name: 'demo.db', location: 'default'});
+   /* db = window.sqlitePlugin.openDatabase({name: 'demo.db', location: 'default'});
 
     create_table(db, 'my_table', ['name', 'surname', 'desc']);
     jQuery('.insert').click(function () {
@@ -8,31 +8,12 @@ document.addEventListener('deviceready', function () {
     });
     jQuery('.check').click(function () {
         jQuery('#console').append('<span>' + get_info(db, 'my_table', 'desc', 'name', 'eR') + '</span>');
-    });
-
-    jQuery('label[for="name"] .fa-microphone').click(function () {
-        start_talkwrite('#new-form input[name="name"]', 'Podaj nazwę czapki');
-    });
-    jQuery('label[for="description"] .fa-microphone').click(function () {
-        start_talkwrite('#new-form form textarea', 'Opisz czapkę');
-    });
-
-    window.plugins.speechRecognition.requestPermission(function () {
-        console_log('Nadano');
-    }, function () {
-        console_log('Nie nadano');
-    });
-
-
-
-
-
-
+    });*/
     jQuery('button.new-button').click(function () {
-        if(jQuery(this).hasClass('new')){
-            open_new();
-        }else{
+        if(jQuery('#new-form').is(':visible')){
             close_new();
+        }else{
+            open_new();
         }
     });
 
@@ -43,19 +24,6 @@ document.addEventListener('deviceready', function () {
 
 
 
-
-jQuery(document).ready(function () {
-
-
-    jQuery('button.new-button').click(function () {
-        if(jQuery(this).hasClass('new')){
-            open_new();
-        }else{
-            close_new();
-        }
-    });
-
-});
 
 
 
