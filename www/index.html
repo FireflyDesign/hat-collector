@@ -41,6 +41,7 @@
         <div id="console">
             <button class="insert">Insert</button>
             <button class="check">Check</button>
+            <button class="listen">Listen</button>
         </div>
         <div class="bar">
             <button class="fa fa-plus new"></button>
@@ -50,7 +51,7 @@
         </div>
         <div class="content">
             <div class="search-container">
-                <div class="row">
+                <div class="row input-search">
                     <input id="search" name="search" placeholder="Szukaj...">
                 </div>
                 <ul id="results" class="list-group">
@@ -83,17 +84,20 @@
                     </li>
                 </ul>
             </div>
-           <!--  <form>
-                <label for="name">
-                    <input id="name" name="name" placeholder="Nazwa czapki">
-                </label>
-                <label for="photo">
-                    <input id="photo" name="photo" placeholder="Zdjecie">
-                </label>
-                <label for="description">
-                    <input id="description" name="description" placeholder="Nazwa czapki">
-                </label>
-            </form> -->
+            <div id="new-form">
+                <div class="bg"></div>
+                <form>
+                    <label for="name">
+                        <input id="name" name="name" placeholder="Nazwa czapki">
+                    </label>
+                    <label for="photo">
+                        <input id="photo" name="photo" placeholder="Zdjecie">
+                    </label>
+                    <label for="description">
+                        <textarea id="description" name="description" placeholder="Opis czapki..."></textarea>
+                    </label>
+                </form>
+            </div>
         </div>
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>

@@ -9,6 +9,25 @@ document.addEventListener('deviceready', function() {
     jQuery('.check').click(function(){
         jQuery('#console').append('<span>' + get_info(db, 'my_table', 'desc', 'name', 'eR') + '</span>');
     });
+    jQuery('.listen').click(function(){
+        var options = {
+            language: 'pl-PL',
+            matches: 5,
+            prompt: 'Chuju muju'
+        };
+        window.plugins.speechRecognition.startListening(function(result){
+            console_log(result);
+        }, function(error){
+            console_log(error);
+        }, options);
+    });
+
+    window.plugins.speechRecognition.requestPermission(function () {
+        console_log('Nadano');
+    }, function () {
+        console_log('Nie nadano');
+    });
+
 
 });
 
@@ -32,7 +51,7 @@ function create_table(db, name, columns) {
     }, function(error) {
         console_log('Transaction ERROR: ' + error.message);
     }, function(msg) {
-        console_log('Database created. ' + msg + ' OK');
+        //console_log('Database created. ' + msg + ' OK');
     });
 }
 function insert(db, tableName, value) {

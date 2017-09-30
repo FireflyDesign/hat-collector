@@ -14,8 +14,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="40" column="26" lean-forward="false" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+            <state relative-caret-position="173">
+              <caret line="85" column="18" lean-forward="true" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
               <folding>
                 <element signature="n#li#0;n#ul#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#1;n#ul#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -25,25 +25,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="173" column="20" lean-forward="false" selection-start-line="173" selection-start-column="20" selection-end-line="173" selection-end-column="20" />
+            <state relative-caret-position="119">
+              <caret line="73" column="23" lean-forward="true" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hat-collector.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hat-collector.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/hat-collector.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="76" lean-forward="true" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
+            <state relative-caret-position="51">
+              <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
               <folding>
-                <marker date="1506780776511" expanded="true" signature="833:888" ph="CREATE TABLE... DemoTable" />
-                <marker date="1506780776511" expanded="true" signature="1320:1372" ph="INSERT INTO DemoTable... " />
-                <marker date="1506780776511" expanded="true" signature="1786:1808" ph="SELECT count... " />
+                <marker date="1506796727751" expanded="true" signature="1360:1415" ph="CREATE TABLE... DemoTable" />
+                <marker date="1506796727751" expanded="true" signature="1849:1901" ph="INSERT INTO DemoTable... " />
+                <marker date="1506796727751" expanded="true" signature="2315:2337" ph="SELECT count... " />
               </folding>
             </state>
           </provider>
@@ -78,6 +78,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>inpu</find>
+    </findStrings>
+  </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
       <command text="ls" />
@@ -93,9 +98,9 @@
         <option value="$PROJECT_DIR$/www/js/jquery-3.2.1.min.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/www/js/index.js" />
+        <option value="$PROJECT_DIR$/www/js/hat-collector.js" />
         <option value="$PROJECT_DIR$/www/css/index.css" />
         <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/js/hat-collector.js" />
       </list>
     </option>
   </component>
@@ -112,11 +117,10 @@
     <handled-path value="$PROJECT_DIR$/platforms/android/cordova/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="318" />
-    <option name="y" value="-19" />
-    <option name="width" value="672" />
-    <option name="height" value="699" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="680" />
+    <option name="width" value="680" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -199,18 +203,18 @@
       <workItem from="1506534451778" duration="473000" />
       <workItem from="1506535082670" duration="19054000" />
       <workItem from="1506616567540" duration="5125000" />
-      <workItem from="1506772888255" duration="8846000" />
+      <workItem from="1506772888255" duration="14522000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33498000" />
+    <option name="totallyTimeSpent" value="39174000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
+    <frame x="680" y="0" width="680" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.117781155" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1967742" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.32968238" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" x="-1845" y="318" width="1674" height="295" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -293,9 +297,9 @@
         <state relative-caret-position="51">
           <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
           <folding>
-            <marker date="1506780776511" expanded="true" signature="833:888" ph="CREATE TABLE... DemoTable" />
-            <marker date="1506780776511" expanded="true" signature="1320:1372" ph="INSERT INTO DemoTable... " />
-            <marker date="1506780776511" expanded="true" signature="1786:1808" ph="SELECT count... " />
+            <marker date="1506796727751" expanded="true" signature="1360:1415" ph="CREATE TABLE... DemoTable" />
+            <marker date="1506796727751" expanded="true" signature="1849:1901" ph="INSERT INTO DemoTable... " />
+            <marker date="1506796727751" expanded="true" signature="2315:2337" ph="SELECT count... " />
           </folding>
         </state>
       </provider>
@@ -430,8 +434,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="40" column="26" lean-forward="false" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        <state relative-caret-position="173">
+          <caret line="85" column="18" lean-forward="true" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
           <folding>
             <element signature="n#li#0;n#ul#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#1;n#ul#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -440,23 +444,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/index.css">
+    <entry file="file://$PROJECT_DIR$/www/js/hat-collector.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="173" column="20" lean-forward="false" selection-start-line="173" selection-start-column="20" selection-end-line="173" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="51">
+          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <marker date="1506796727751" expanded="true" signature="1360:1415" ph="CREATE TABLE... DemoTable" />
+            <marker date="1506796727751" expanded="true" signature="1849:1901" ph="INSERT INTO DemoTable... " />
+            <marker date="1506796727751" expanded="true" signature="2315:2337" ph="SELECT count... " />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/hat-collector.js">
+    <entry file="file://$PROJECT_DIR$/www/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="76" lean-forward="true" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
-          <folding>
-            <marker date="1506780776511" expanded="true" signature="833:888" ph="CREATE TABLE... DemoTable" />
-            <marker date="1506780776511" expanded="true" signature="1320:1372" ph="INSERT INTO DemoTable... " />
-            <marker date="1506780776511" expanded="true" signature="1786:1808" ph="SELECT count... " />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="73" column="23" lean-forward="true" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
