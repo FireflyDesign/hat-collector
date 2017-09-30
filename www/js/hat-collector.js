@@ -9,7 +9,11 @@ document.addEventListener('deviceready', function () {
     jQuery('.check').click(function () {
         jQuery('#console').append('<span>' + get_info(db, 'my_table', 'desc', 'name', 'eR') + '</span>');
     });
-    jQuery('.listen').click(function () {
+
+    jQuery('label[for="name"] .fa-microphone').click(function () {
+        start_talkwrite('#new-form input[name="name"]', 'Podaj nazwę czapki');
+    });
+    jQuery('label[for="description"] .fa-microphone').click(function () {
         start_talkwrite('#new-form form textarea', 'Opisz czapkę');
     });
 
@@ -49,13 +53,6 @@ jQuery(document).ready(function () {
         }else{
             close_new();
         }
-    });
-
-    jQuery('label[for="name"] .fa-microphone').click(function () {
-        start_talkwrite('#new-form input[name="name"]', 'Podaj nazwę czapki');
-    });
-    jQuery('label[for="description"] .fa-microphone').click(function () {
-        start_talkwrite('#new-form form textarea', 'Opisz czapkę');
     });
 
 });
