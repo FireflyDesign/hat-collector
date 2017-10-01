@@ -22,6 +22,7 @@ function start_talkwrite(container, title) {
     };
 
     window.plugins.speechRecognition.startListening(function (result) {
+        console_log(result);
         jQuery(container).val(result[0]);
     }, function (error) {
         console_log(error);
