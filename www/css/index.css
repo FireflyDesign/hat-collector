@@ -293,3 +293,19 @@ label[for="photo"] figure img{
 }
 
 
+.actions{
+    margin-top: 45px;
+    text-align: center;
+}
+
+.actions button{
+    background: transparent;
+    border: 0;
+    font-size: 40px;
+    display: inline-block;
+    margin-right: 40px;
+    color: #ffffff;
+}
+.actions button:last-child{
+    margin-right: 0;
+}
