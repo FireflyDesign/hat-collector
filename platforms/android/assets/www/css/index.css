@@ -265,7 +265,7 @@ label[for="name"] .fa-microphone{
 }
 label[for="photo"] figure{
     width: 100%;
-    height: 150px;
+    height: 220px;
     background: #333333;
     margin-bottom: 20px;
     position: relative;
@@ -282,6 +282,14 @@ label[for="photo"] figure::after{
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: FontAwesome;
+}
+label[for="photo"] figure.contains-picture::after{
+    display: none;
+}
+label[for="photo"] figure img{
+    max-height: 100%;
+    margin: 0 auto;
+    display: block;
 }
 
 

@@ -15,6 +15,14 @@ module.exports = [
         "merges": [
             "window.plugins.speechRecognition"
         ]
+    },
+    {
+        "id": "cordova-plugin-camera-preview.CameraPreview",
+        "file": "plugins/cordova-plugin-camera-preview/www/CameraPreview.js",
+        "pluginId": "cordova-plugin-camera-preview",
+        "clobbers": [
+            "CameraPreview"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -23,7 +31,8 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.3.2",
     "cordova-plugin-sqlite-2": "1.0.4",
     "cordova-plugin-console": "1.1.0",
-    "cordova-plugin-speechrecognition": "1.1.2"
+    "cordova-plugin-speechrecognition": "1.1.2",
+    "cordova-plugin-camera-preview": "0.9.0"
 };
 // BOTTOM OF METADATA
 });

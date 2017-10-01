@@ -18,6 +18,9 @@
         },
         "cordova-plugin-speechrecognition": {
             "PACKAGE_NAME": "com.collector.hat"
+        },
+        "cordova-plugin-camera-preview": {
+            "PACKAGE_NAME": "com.collector.hat"
         }
     },
     "dependent_plugins": {}
