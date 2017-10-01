@@ -21,7 +21,7 @@ document.addEventListener('deviceready', function() {
     });
 
 
-
+    /* Open new form */
     jQuery('button.new-button').click(function () {
         if(jQuery(this).hasClass('new')){
             open_new()
@@ -39,34 +39,11 @@ document.addEventListener('deviceready', function() {
         start_talkwrite('#description', 'Opisz czapkę...');
     });
     jQuery('#new-form .image-preview').click(function(){
+        var thisImg = jQuery('<img>').addClass('img-responsive');
+        jQuery(this).addClass('contains-picture').append(thisImg);
 
-        var thisFigure = this;
-        var options = {
-            x: 0,
-            y: 0,
-            width: window.screen.width,
-            height: window.screen.height,
-            camera: CameraPreview.CAMERA_DIRECTION.BACK,
-            toBack: false,
-            tapPhoto: true,
-            tapFocus: false,
-            previewDrag: false
-        };
-
-        CameraPreview.startCamera(options);
-
-        CameraPreview.takePicture({width:1280, height:800, quality: 85}, function(base64PictureData){
-            var imageSrcData = 'data:image/jpeg;base64,' +base64PictureData;
-            jQuery(thisFigure).addClass('contains-picture');
-            jQuery(thisFigure).append(jQuery('<img>').addClass('img-responsive').attr('src', imageSrcData));
-
-            CameraPreview.stopCamera();
-        },
-        function (error) {
-            console_log(error);
-        });
+        take_photo(CameraPreview, thisImg);
     });
-
 
 });
 
