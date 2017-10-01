@@ -30,6 +30,7 @@ function start_talkwrite(container, title) {
 
 
 function take_photo(CameraPreview, img) {
+
     var options = {
         x: 0,
         y: 0,
@@ -52,5 +53,9 @@ function take_photo(CameraPreview, img) {
     },
     function (error) {
         console_log(error);
+    });
+
+    CameraPreview.onBackButton(function() {
+        console_log('Back button pushed');
     });
 }

@@ -39,9 +39,16 @@ document.addEventListener('deviceready', function() {
         start_talkwrite('#description', 'Opisz czapkę...');
     });
     jQuery('#new-form .image-preview').click(function(){
+        // If figure already contains img - remove it
+        var prevImg = jQuery(this).children('img')[0];
+        if(prevImg){
+            jQuery(prevImg).remove();
+        }
+        // Create new img
         var thisImg = jQuery('<img>').addClass('img-responsive');
         jQuery(this).addClass('contains-picture').append(thisImg);
 
+        // Take photo and set its base64 src to new img
         take_photo(CameraPreview, thisImg);
     });
 
